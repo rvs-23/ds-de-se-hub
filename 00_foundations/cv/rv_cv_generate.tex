@@ -1,0 +1,198 @@
+\documentclass[letterpaper,11pt]{article}        % Standard US-letter, 11-pt font
+
+%=================== fonts & encoding ===================
+\usepackage[T1]{fontenc}      % needed for bold-small-caps in Latin-Modern
+\usepackage{lmodern}
+
+%=================== packages ===========================
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+%=================== page layout ========================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.1pt}          % stop fancyhdr warning
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%=================== section style ======================
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large}{}
+  {0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%=================== custom commands ====================
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeEducationHeading}[6]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \textit{\small#5} & \textit{\small #6} \\
+  \end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeProjectHeading}[2]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeOrganizationHeading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+    \textit{\small#3}
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%=================== DOCUMENT ============================
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Rishav Sharma} \\[3pt]
+    \small
+    \faMobile\; \href{tel:917583976173}{+91 758 397 6173} \;|\;
+    \faAt\; \href{mailto:23rishavsharma@gmail.com}{23rishavsharma@gmail.com} \;|\;
+    \faLinkedinSquare\; \href{https://www.linkedin.com/in/rishav-sharma-23rvs/}{LinkedIn} \;|\;
+    \faGithub\; \href{https://github.com/rvs-23}{GitHub} \;|\;
+    \faGlobe\; \href{https://medium.com/@rvs}{Medium} \;|\;
+    \faMapMarker\; Bengaluru, India
+\end{center}
+
+%----------- SUMMARY -----------
+\textbf{Data Scientist} with over 3 years of experience architecting and deploying scalable AI/ML solutions, specializing in \textbf{Generative AI} (RAG, LLMs) and end-to-end \textbf{MLOps} within \textbf{Palantir Foundry}.
+
+%----------- SKILLS -----------
+\section{Skills}
+\resumeSubHeadingListStart
+  \small{\item{
+    \textbf{Languages \& Frameworks:}{ Python (NumPy, Pandas, Scikit-Learn, Matplotlib), TypeScript, SQL, Apache Spark }\\[3pt]
+    \textbf{AI / ML:}{ Machine Learning (Regression, Classification), Generative AI (LLMs, RAG), Explainability (SHAP) }\\[3pt]
+    \textbf{Platforms \& Tools:}{ Palantir Foundry (Workshop, Ontology, Pipeline Builder, Code Repo, AIP suite), REST APIs, Git }\\
+  }}
+\resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Swiss Re GBS India}{Bengaluru, India}
+    {Data Science Specialist II}{Oct 2022 -- Present, Full-time}
+      \resumeItemListStart
+        \resumeItem{Designed, Developed \& Deployed \textbf{3+ end-to-end Data Science \& LLM pipelines} in Palantir Foundry (Workshop, Ontology, Pipeline Builder, Code Repo), increasing the productivity of UWs by \textbf{30\%}.}
+        \resumeItem{Collaborated with \textbf{3 cross-functional teams} (underwriting, operations, FinPro) to translate business requirements into ML solutions and actively deliver.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Smart Owl Education (Code-Young)}{Bengaluru, India}
+    {Online Python Instructor}{Nov 2020 -- May 2022, Part-time}
+      \resumeItemListStart
+        \resumeItem{Developed and delivered \textbf{750+ hours} of interactive Python curriculum (basic to intermediate), serving \textbf{25+} students across India, USA, and UAE.}
+        \resumeItem{Implemented \textbf{systematic assessments} via Forms based on Python, improving student retention by \textbf{25\%}.}
+        \resumeItem{Provided \textbf{weekly performance reports} and one-on-one feedback sessions to individually guide learning.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Customer Prioritization} $|$ \emph{\href{https://github.com/rvs-23/customer_prioritization_packt}{\color{blue}GitHub}}}{\textit{Packt Publications, 2021}}
+      \resumeItemListStart
+        \resumeItem{Led end-to-end development of \textbf{ML-powered scoring system} analyzing \textbf{50+} behavioral features (payment attempts, session activity, device metrics) to predict conversion likelihood, reducing sales outreach targets by \textbf{83\%} (250/day from 1000+).}
+        \resumeItem{Optimized the classifier (SGD with elastic net) through grid search achieving \textbf{precision: 0.98, recall: 0.98}, implementing incremental learning for daily web traffic updates.}
+        \resumeItem{Delivered \textbf{63\% conversion lift} vs legacy rules-based system through dynamic probability scoring, generating daily prioritized lead lists with automated CSV reports.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Nebula}}{\textit{Swiss Re, 2024-25}}
+      \resumeItemListStart
+        \resumeItem{Designed \& built “Nebula”, a \textbf{Retrieval Augmented Generation (RAG)} assistant on Palantir Foundry, enabling real-time Q\&A risk evaluations from unstructured documents.}
+        \resumeItem{Implemented PDF ingestion \& vector-search pipeline (Pipeline Builder, TS functions) that matches uploads against an 800k-company master list and enriches with REST-API-fetched news, reducing manual underwriting \textbf{research time by 40\%}.}
+        \resumeItem{Developed a \textbf{comprehensive admin panel} (Foundry Code Repository, React/TS) for prompt configuration, dashboard statistics, LLM evaluation controls (accuracy, latency, feedback loops), and one-click submit orchestration of the RAG pipeline.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Loss Ratio Hotspots}}{\textit{Swiss Re, 2023-24}}
+      \resumeItemListStart
+        \resumeItem{Performed a comprehensive ML-driven key-driver analysis on US agents \& lawyers portfolio	using \textbf{ML and SHAP}, achieving a \textbf{5\%} signal uplift over the base model.}
+        \resumeItem{Identified the \textbf{top loss-ratio drivers} (e.g. claim frequency, policy tenure, regional risk factors) that empowered the business to target portfolio optimizations.}
+        \resumeItem{Delivered data-driven recommendations to stakeholders that mitigated risk, \textbf{optimized loss ratios by 10\%}, and accelerated decision-making.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeEducationHeading
+    {Hindu College, University of Delhi}{Delhi, India}
+    {Master of Operational Research; \textbf{GPA: 8.2/10}}{Aug 2020 -- May 2022}{}{ }
+  
+  \vspace{-6.9pt}
+  
+  \resumeEducationHeading
+    {Bhavans College, Osmania University}{Hyderabad, India}
+    {B.Sc.(General–Math/Statistics/CS); \textbf{GPA: 8.9/10}}{May 2017 -- May 2020}{}{ }
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATES -----------
+\section{Certificates}
+\resumeSubHeadingListStart
+
+\item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{Stanford xCS224N – Natural Language Processing with Deep Learning} & \textit{Apr 2024 \href{https://digitalcredential.stanford.edu/check/2B48AB2F2DC87B28B336EEF13EB193766537BAF01161AD344EE5D383DA90FB52RHdUWll0aDZxR044T09YSXp3em9OdW9tRzJPVnlIQ0hwdXU5T0o5YWNKM3ZMMEtv}{\color{blue}(verify)}} \\
+  
+  \textbf{Palantir Foundry – Data Engineering Professional} & \textit{Apr 2025 \href{https://verify.skilljar.com/c/wsug5z8y2k54}{\color{blue}(verify)}} \\
+\end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+\section{Awards \& Achievements}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      \textbf{Top Performance:}{ Received \textbf{top 5\% performance rating} at Swiss Re for two consecutive years (2023, 2024).} \\[3pt]
+      \textbf{Deliver-at-Speed Award:}{ Recognized for consistently \textbf{exceeding project delivery timelines by 25\%}.} \\[3pt]
+      \textbf{Foundry AIP Training:}{ Upskilled \textbf{60+ colleagues} through 3+ trainings on Foundry's Artifical Intelligence Platform. } \\[3pt]
+      \textbf{Placement Leadership:}{ Led and coordinated \textbf{campus placements for 125+ students} as Placement Coordinator.} \\[3pt]
+  }}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
