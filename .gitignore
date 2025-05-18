@@ -47,3 +47,8 @@ pytest_cache/
 .idea/
 *.iml
 
+# ── python_adhoc experiments ─────────────────────────────
+90_projects/python_adhoc/.venv/
+90_projects/python_adhoc/__pypackages__/
+90_projects/python_adhoc/data/*
+
