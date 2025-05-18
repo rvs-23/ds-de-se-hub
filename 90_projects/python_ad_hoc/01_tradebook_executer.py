@@ -24,8 +24,8 @@ import pandas as pd
 # ─── Configuration ─────────────────────────────────────────────────────────────
 
 DATA_DIRS = {
-    "sample": Path.cwd() / "data" / "sample_data",
-    "compute": Path.cwd() / "data" / "compute_data",
+    "sample": Path.cwd() / "data" / "01_sample_kite_data",
+    "compute": Path.cwd() / "data" / "01_compute_kite_data",
 }
 
 # Filename patterns for Kite tradebook files
