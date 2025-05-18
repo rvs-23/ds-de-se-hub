@@ -1,0 +1,16 @@
+[project]
+name = "ad-hoc-python"
+version = "0.1.1"
+description = "Ad‑hoc DS environment"
+requires-python = ">=3.13"    # <-- ASCII hyphen-minus here
+
+dependencies = [
+  "numpy>=1.25",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "scikit-learn>=1.3",
+  "jupyterlab>=4.1",
+  "requests>=2.32.3",
+  "black>=25.1.0",
+  "ipython>=9.2.0",
+]
