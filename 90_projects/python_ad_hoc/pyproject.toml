@@ -12,5 +12,9 @@ dependencies = [
   "jupyterlab>=4.4",
   "black>=25.1.0",
   "ipython>=9.2.0",
+  "streamlit>=1.45.1",
+  "pymupdf>=1.25.5",
+  "markdown2>=2.5.3",
+  "rich>=14.0.0",
 ]
 
