@@ -172,31 +172,15 @@ git branch -d feat/<topic>-<desc>
 
 ---
 
-## 8. Resource Link-Board
+## 8. Other Resources Link-Board (live)
 
 All external links and reading lists live in Notion, synced manually:
-[https://www.notion.so/rv/knowledge-library](https://www.notion.so/1fa21584c09f806ca677de1d06722382?v=1fa21584c09f806ab59d000ccfdd103e&pvs=4)
+[https://www.notion.so/rv/ds-de-se-knowledge-library](https://www.notion.so/Resources-DS-Software-Eng-1fa21584c09f80b8a571f811fb8e016a?pvs=4)
 
 ---
 
-## 9. Environment Bootstrap
 
-```bash
-git clone --recurse-submodules git@github.com:rvs-23/ds-de-se-hub.git
-cd ds-de-se-hub
-
-# Install tooling
-python -m venv .tools
-source .tools/bin/activate
-pip install -r requirements.txt   # black, isort, pre-commit
-
-# Initialize submodules if any
-git submodule update --init --recursive
-```
-
----
-
-## 10. Maintainers
+## 9. Maintainers
 
 **Primary:** rv (Data Science)
 For questions: open an issue or email `23rishavsharma@gmail.com`.
