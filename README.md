@@ -175,7 +175,7 @@ git branch -d feat/<topic>-<desc>
 ## 8. Other Resources Link-Board (live)
 
 All external links and reading lists live in Notion, synced manually:
-[https://www.notion.so/rv/ds-de-se-knowledge-library](https://www.notion.so/Resources-DS-Software-Eng-1fa21584c09f80b8a571f811fb8e016a?pvs=4)
+[https://www.notion.so/rv/ds-de-se-knowledge-library](https://www.notion.so/1ef21584c09f80398551fb83167d0a62?v=1fa21584c09f80a3a66a000cf41d6ffd&pvs=4)
 
 ---
 
