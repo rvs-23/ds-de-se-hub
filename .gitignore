@@ -9,7 +9,6 @@ __pycache__/
 venv/
 
 # ── Jupyter ────────────────────────────────────────────
-*.ipynb
 .ipynb_checkpoints/
 
 # ── macOS & Linux junk ─────────────────────────────────
@@ -38,7 +37,6 @@ Icon?
 htmlcov/
 coverage.*
 *.cover
-*.py,cover
 .cache/
 pytest_cache/
 
