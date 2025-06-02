@@ -2,10 +2,9 @@ import numpy as np
 import pandas as pd
 import pytest
 
-# Adjust the import path based on how your 'utility_scripts' are structured
-# If 'utility_scripts' is a package (has __init__.py) and is in PYTHONPATH
-# or installed in editable mode:
-from utility_scripts.data_wrangling_utils.utils import find_problematic_cols_df
+# from python_utility.data_wrangling_utils.utils import find_problematic_cols_df
+# from data_wrangling_utils.utils import find_problematic_cols_df~
+
 
 # If running pytest from the root of 'ds-de-se-repo' and 'projects' is a directory,
 # you might need to add 'projects' to sys.path or install 'utility_scripts' as a package.
