@@ -1,3 +1,6 @@
 [submodule "90_projects/rv-matrix-themed-portfolio"]
 	path = 90_projects/rv-matrix-themed-portfolio
 	url = git@github.com:rvs-23/rv-matrix-themed-portfolio.git
+[submodule "90_projects/PyUtilsRv"]
+	path = 90_projects/PyUtilsRv
+	url = git@github.com:rvs-23/PyUtilsRv.git
