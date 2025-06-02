@@ -1,4 +1,3 @@
-from typing import Optional
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,9 +16,9 @@ def hist_distribution(
     grid: bool = False,
     zoom_x: bool = False,
     zoom_x_lim: tuple[None] = (None, None),
-    title: Optional[str] = None,
-    xlabel: Optional[str] = None,
-    ylabel: Optional[str] = None,
+    title: str | None = None,
+    xlabel: str | None = None,
+    ylabel: str | None = None,
 ):
     if log and scientific:
         raise ValueError("You have set both scientific and log as True. Change.")
@@ -36,7 +35,7 @@ def hist_distribution(
             "Mode": df[feature].mode()[0],
         }
         color = iter(plt.cm.rainbow(np.linspace(0, 1, 6)))
-        for _, value in zip(color, central_vals):
+        for _, value in zip(color, central_vals, strict=False):
             ax.axvline(
                 x=central_vals[value],
                 label=value,

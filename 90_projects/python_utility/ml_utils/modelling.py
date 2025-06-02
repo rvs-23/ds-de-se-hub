@@ -18,6 +18,7 @@ from scipy.stats import chi2_contingency
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import RocCurveDisplay, auc
 
+
 def classification_model_evaluation_track(
     eval_metric2_val: dict = None,
     model_name: str = None,
@@ -716,8 +717,8 @@ def roc_auc_w_cv(
     )
     ax.legend(loc="lower right")
     plt.show()
-    
-    
+
+
 def synthetic_data_generate(
     distribution: str,
     param1: float,
