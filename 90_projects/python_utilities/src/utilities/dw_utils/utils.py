@@ -228,7 +228,7 @@ def get_df_info(
 
                 # Merge these stats into the main df_info DataFrame
                 # Set 'Column' as index for df_info temporarily for merging
-                df_info = df_info.set_index("Column").join(stats_df_for_merge, how="left").reset_index()
+                df_info = df_info.set_index("column").join(stats_df_for_merge, how="left").reset_index()
 
             # Fill NaN for non-numeric columns in the newly added stat columns
             # This is implicitly handled by the left join if stats_df_for_merge only contains numeric cols.
