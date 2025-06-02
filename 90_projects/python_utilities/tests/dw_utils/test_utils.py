@@ -12,7 +12,7 @@ from utilities.dw_utils.utils import (
 )
 
 
-def assert_results_equal(result, expected_constant, expected_null): # type: ignore
+def assert_results_equal(result, expected_constant, expected_null):  # type: ignore
     """
     Helper function to compare the result of find_problematic_cols_df with expected outcomes.
 
@@ -21,8 +21,8 @@ def assert_results_equal(result, expected_constant, expected_null): # type: igno
         expected_constant (list): The list of expected constant columns.
         expected_null (list): The list of expected all-null columns.
     """
-    assert sorted(result.get("constant_cols", [])) == sorted(expected_constant) # type: ignore
-    assert sorted(result.get("all_null_cols", [])) == sorted(expected_null) # type: ignore
+    assert sorted(result.get("constant_cols", [])) == sorted(expected_constant)  # type: ignore
+    assert sorted(result.get("all_null_cols", [])) == sorted(expected_null)  # type: ignore
 
 
 def test_basic_scenario():
