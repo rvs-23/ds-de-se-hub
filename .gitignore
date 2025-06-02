@@ -50,3 +50,5 @@ pytest_cache/
 90_projects/python_adhoc/__pypackages__/
 90_projects/python_adhoc/data/*
 
+# Ruff cache
+.ruff_cache/
