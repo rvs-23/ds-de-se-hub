@@ -1,7 +1,6 @@
 [project]
 name = "python-utilities"
 version = "0.1.0"
-readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "matplotlib>=3.10.3",
@@ -49,3 +48,8 @@ quote-style = "double"             # Default: "double" (like Black)
 indent-style = "space"             # Default: "space"
 skip-magic-trailing-comma = false  # Default: false
 line-ending = "auto"               # Default: "auto"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the 'src' directory
+include = ["utilities*"] # Include the 'utilities' package and its sub-packages
