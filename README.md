@@ -7,7 +7,7 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
 ## Purpose
 
 - Single source-of-truth for all study material.
-- Decade directory schema (`00_`, `10_`, …) — scales without renaming.
+- Decade directory schema (`10_`, `20_`, …) — scales without renaming.
 - Git LFS for large binaries so clones stay lightweight.
 - Branch-protected `main` — every change goes through a PR.
 
@@ -17,14 +17,10 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
 
 ```
 .
-├── 00_foundations/
-│   ├── books/
-│   ├── cv/
-│   └── statistics/
 ├── 10_programming/
 │   └── python/
 │       ├── 00_books/
-│       ├── 01_reference_pdfs/
+│       ├── 01_references/
 │       ├── 02_notebooks/
 │       ├── challenges/
 │       ├── 90_playgrounds/
@@ -42,6 +38,7 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
 │   ├── 23_specialisations/
 │   │   ├── actuarial/
 │   │   ├── nlp/
+│   │   ├── statistics/
 │   │   └── time_series/
 │   └── data_school/
 │       ├── ML-text-main/
@@ -50,8 +47,7 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
 │   └── spark_big_data/
 │       └── books/
 ├── 40_software_engineering/
-│   ├── dsa_algorithms/
-│   └── system_design/
+│   └── dsa_algorithms/
 ├── 50_industry_and_research/
 │   └── 00_ml_papers/
 └── 60_interview_prep/
@@ -78,7 +74,7 @@ Each topic folder uses a consistent internal layout:
 
 | Question | Answer |
 |----------|--------|
-| Which decade? | `00` foundations · `10` programming · `20` data science · `30` data engineering · `40` software engineering · `50` industry & research · `60` interview prep |
+| Which decade? | `10` programming · `20` data science · `30` data engineering · `40` software engineering · `50` industry & research · `60` interview prep |
 | Full textbook? | `<topic>/00_books/` |
 | Short reference, paper, or cheat-sheet? | `<topic>/01_references/` |
 | Notebook or tutorial? | `<topic>/02_notebooks/` |
