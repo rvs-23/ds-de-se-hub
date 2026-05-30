@@ -55,3 +55,6 @@ pytest_cache/
 
 # Build artifacts
 *.egg-info/
+
+Icon
+Icon

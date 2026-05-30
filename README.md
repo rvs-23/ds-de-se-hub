@@ -4,48 +4,19 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
 
 ---
 
-## Purpose
-
-- Single source-of-truth for all study material.
-- Decade directory schema (`10_`, `20_`, …) — scales without renaming.
-- Git LFS for large binaries so clones stay lightweight.
-- Branch-protected `main` — every change goes through a PR.
-
----
-
 ## Folder Structure
 
 ```
 .
 ├── 10_programming/
 │   └── python/
-│       ├── 00_books/
-│       ├── 01_references/
-│       ├── 02_notebooks/
-│       ├── challenges/
-│       ├── 90_playgrounds/
-│       └── data/
 ├── 20_data_science/
 │   ├── 21_ml_classical/
-│   │   ├── 00_books/
-│   │   ├── 01_references/
-│   │   ├── 02_notebooks/
-│   │   ├── challenges/
-│   │   └── data/
 │   ├── 22_deep_learning/
-│   │   ├── 00_books/
-│   │   └── 01_references/
 │   ├── 23_specialisations/
-│   │   ├── actuarial/
-│   │   ├── nlp/
-│   │   ├── statistics/
-│   │   └── time_series/
 │   └── data_school/
-│       ├── ML-text-main/
-│       └── ML-Workflow/
 ├── 30_data_engineering/
 │   └── spark_big_data/
-│       └── books/
 ├── 40_software_engineering/
 │   └── dsa_algorithms/
 ├── 50_industry_and_research/
@@ -55,7 +26,7 @@ Personal knowledge library for Data Science, Data Engineering, and Software Engi
     └── coding_drills/
 ```
 
-**Decade prefixes** leave slots (`70_`, `80_`) open for future tracks without renaming anything.
+Decade prefixes leave slots (`70_`, `80_`) open for future tracks without renaming anything.
 
 Each topic folder uses a consistent internal layout:
 
@@ -72,16 +43,31 @@ Each topic folder uses a consistent internal layout:
 
 ## Where to Put New Files
 
-| Question | Answer |
-|----------|--------|
-| Which decade? | `10` programming · `20` data science · `30` data engineering · `40` software engineering · `50` industry & research · `60` interview prep |
-| Full textbook? | `<topic>/00_books/` |
-| Short reference, paper, or cheat-sheet? | `<topic>/01_references/` |
-| Notebook or tutorial? | `<topic>/02_notebooks/` |
-| Assignment or problem set? | `<topic>/challenges/` |
-| Dataset? | `<topic>/data/` — track via Git LFS |
-| Large binary (PDF, image, dataset)? | Run `git lfs track "*.pdf"` before committing |
-| Cross-topic resource? | File under primary learning intent (e.g. ML paper → `50_industry_and_research/`) |
+**Pick the decade first:**
+
+| Decade | Track |
+|--------|-------|
+| `10_programming/` | Python, general programming |
+| `20_data_science/` | ML, deep learning, statistics, NLP, time series |
+| `30_data_engineering/` | Spark, pipelines, big data |
+| `40_software_engineering/` | DSA, system design |
+| `50_industry_and_research/` | ML papers → `00_ml_papers/`; industry reports, whitepapers → root |
+| `60_interview_prep/` | Case studies, coding drills |
+
+**Then pick the subfolder:**
+
+| File type | Subfolder |
+|-----------|-----------|
+| Full textbook or long-form PDF | `00_books/` |
+| Paper, cheat-sheet, or short reference | `01_references/` |
+| Notebook or tutorial | `02_notebooks/` |
+| Assignment or problem set | `challenges/` |
+| Dataset (CSV, Excel, etc.) | `data/` — track via Git LFS |
+| Scratch / experimental code | `90_playgrounds/` |
+
+**Cross-topic resources:** file under primary learning intent (e.g. an ML paper goes to `50_industry_and_research/00_ml_papers/`, not the topic folder).
+
+**Large binaries (PDF, epub, dataset):** Run `git lfs track "*.ext"` before committing. Check `.gitattributes` — `*.pdf` and `*.epub` are already tracked.
 
 ---
 
